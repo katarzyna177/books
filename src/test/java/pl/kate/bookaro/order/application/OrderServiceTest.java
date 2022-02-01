@@ -135,20 +135,7 @@ class OrderServiceTest {
             service.placeOrder(command);
         });
     }
-
-    @Test
-    public void userCannotOrderNegativeNumberOfBooks() {
-        // user nie moze zamowic ujemnej liczby ksiazek
-        //given
-        Book effectiveJava = givenEffectiveJava(50L);
-        //when
-        int quantity = -5;
-        //then
-        assertThrows(IllegalArgumentException.class, () -> {
-            placedOrder(effectiveJava.getId(), quantity);
-        });
-    }
-
+    
     @Test
     public void userCannotRevokeOtherUsersOrder() {
         // given
