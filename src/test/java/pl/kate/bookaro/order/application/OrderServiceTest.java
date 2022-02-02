@@ -135,7 +135,7 @@ class OrderServiceTest {
             service.placeOrder(command);
         });
     }
-    
+
     @Test
     public void userCannotRevokeOtherUsersOrder() {
         // given
