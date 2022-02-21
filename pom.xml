@@ -98,27 +98,17 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<pluginRepositories>
+	<!--<pluginRepositories>
 		<pluginRepository>
 			<id>maven-snapshots</id>
 			<url>https://repository.apache.org/content/repositories/snapshots/</url>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories>-->
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.4</version>
-			</plugin>
-			<plugin>
-				<groupId>com.heroku.sdk</groupId>
-				<artifactId>heroku-maven-plugin</artifactId>
-				<version>3.0.3</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
