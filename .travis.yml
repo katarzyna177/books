@@ -1,5 +1,5 @@
 language: java
-jdk: openjdk-16
+jdk: jdk-15.0.2
 # git strips the wrapper jar file so we have to force its download during the build
 install:
   - mvn -N io.takari:maven:wrapper
