@@ -17,14 +17,13 @@
 	<properties>
 		<java.version>15</java.version>
 		<lombok.version>1.18.20</lombok.version>
-		<hibernate.validator.version>7.0.2.Final</hibernate.validator.version>
+		<hibernate.validator.version>6.1.5.Final</hibernate.validator.version>
 		<commons.lang.version>3.11</commons.lang.version>
 		<postgres.version>42.2.22.jre7</postgres.version>
 		<opencsv.version>5.5</opencsv.version>
 		<springdoc.version>1.4.6</springdoc.version>
 		<flyway.version>7.15.0</flyway.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.flywaydb</groupId>
@@ -98,21 +97,13 @@
 			<artifactId>h2</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.8.1</version>
-		</dependency>
 	</dependencies>
-
 	<pluginRepositories>
 		<pluginRepository>
 			<id>maven-snapshots</id>
 			<url>https://repository.apache.org/content/repositories/snapshots/</url>
 		</pluginRepository>
 	</pluginRepositories>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -123,39 +114,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>3.2.4</version>
-				<!--<configuration>
-					<filters>
-						<filter>
-							<artifact>*:*</artifact>
-							<excludes>
-								<exclude>module-info.class</exclude>
-								<exclude>META-INF/*.SF</exclude>
-								<exclude>META-INF/*.DSA</exclude>
-								<exclude>META-INF/*.RSA</exclude>
-							</excludes>
-						</filter>
-					</filters>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>-->
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-					<compilerArgs>
-						<arg>-parameters</arg>
-					</compilerArgs>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>com.heroku.sdk</groupId>
@@ -164,5 +122,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
