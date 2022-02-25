@@ -15,7 +15,8 @@
 	<description>Project for Spring Boot</description>
 
 	<properties>
-		<java.version>16</java.version>
+		<!--<java.version>16</java.version>-->
+		<java.version>11</java.version>
 		<lombok.version>1.18.20</lombok.version>
 		<hibernate.validator.version>6.1.5.Final</hibernate.validator.version>
 		<commons.lang.version>3.11</commons.lang.version>
@@ -114,11 +115,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version>
-			</plugin>
-			<plugin>
-				<groupId>com.heroku.sdk</groupId>
-				<artifactId>heroku-maven-plugin</artifactId>
-				<version>3.0.3</version>
 			</plugin>
 		</plugins>
 	</build>
