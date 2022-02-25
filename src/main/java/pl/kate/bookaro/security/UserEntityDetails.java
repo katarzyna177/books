@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import pl.kate.bookaro.user.domain.UserEntity;
+import pl.kate.bookaro.users.domain.UserEntity;
 
 import java.util.Collection;
 import java.util.stream.Collectors;

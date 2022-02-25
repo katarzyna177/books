@@ -5,8 +5,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.kate.bookaro.users.application.port.UserRegistrationUseCase;
-import pl.kate.bookaro.user.db.UserEntityRepository;
-import pl.kate.bookaro.user.domain.UserEntity;
+import pl.kate.bookaro.users.db.UserEntityRepository;
+import pl.kate.bookaro.users.domain.UserEntity;
 
 @Service
 @AllArgsConstructor

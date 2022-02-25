@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import pl.kate.bookaro.user.db.UserEntityRepository;
+import pl.kate.bookaro.users.db.UserEntityRepository;
 
 @AllArgsConstructor
 public class BookaroUserDetailsService implements UserDetailsService {

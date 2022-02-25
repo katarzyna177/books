@@ -1,7 +1,7 @@
 package pl.kate.bookaro.users.application.port;
 
 import pl.kate.bookaro.commons.Either;
-import pl.kate.bookaro.user.domain.UserEntity;
+import pl.kate.bookaro.users.domain.UserEntity;
 
 public interface UserRegistrationUseCase {
     RegisterResponse register(String username, String password);

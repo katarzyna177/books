@@ -1,7 +1,7 @@
-package pl.kate.bookaro.user.db;
+package pl.kate.bookaro.users.db;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import pl.kate.bookaro.user.domain.UserEntity;
+import pl.kate.bookaro.users.domain.UserEntity;
 
 import java.util.Optional;
 
